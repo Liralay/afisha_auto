@@ -1,0 +1,35 @@
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .text-secondary {
+    color: #fff;
+}
+
+.dark-mode .card {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #555;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .card-header {
+    background-color: #444;
+    border-bottom: 1px solid #777;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .card-header:hover {
+    background-color: #7f7f7f;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .list-group-item {
+    background-color: #444;
+    border: none;
+    color: #f0f0f0;
+    transition: background-color 0.1s ease-in-out;
+}

@@ -1,0 +1,59 @@
+.readonly-input {
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+}
+
+.readonly-input:focus {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.editable-input {
+    background-color: #fff;
+    color: #333;
+}
+
+.input-group {
+    padding: 10px;
+}
+
+.group-label {
+    padding-top: 10px;
+    padding-left: 35px;
+}
+
+.btn-dark {
+    background-color: #333;
+}
+
+.btn-dark:hover {
+    background-color: #555;
+}
+
+.cursor-pointer,
+.dropdown-item {
+    cursor: pointer;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOutAnimation 0.4s ease forwards;
+}
+
+@keyframes fadeOutAnimation {
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.4s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}

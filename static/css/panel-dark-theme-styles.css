@@ -1,0 +1,150 @@
+/* Общие стили для dark mode */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.1s ease-in-out;
+}
+
+/* Input и Textarea */
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #222;
+    border: 1px solid #555;
+    color: #fff;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+    color: #aaa;
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus,
+.dark-mode input:hover,
+.dark-mode textarea:hover {
+    background-color: #626262;
+    color: #fff;
+}
+
+/* Readonly Input */
+.dark-mode .readonly-input {
+    background-color: #555;
+    color: #aaa;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .readonly-input:focus {
+    background-color: #626262;
+}
+
+/* Editable Input */
+.dark-mode .editable-input {
+    background-color: #222;
+    color: #aaa;
+    transition: background-color 0.1s ease-in-out;
+}
+
+/* Nav Tabs */
+.dark-mode .nav-tabs .nav-link.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #444;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .nav-tabs .nav-link {
+    background-color: #222;
+    color: #fff;
+    border-color: #444;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .nav-tabs .nav-link:hover {
+    background-color: #444;
+}
+
+/* Dropdown */
+.dark-mode .dropdown-toggle {
+    background-color: #222;
+    color: #f0f0f0;
+    border-color: #202020;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .dropdown-toggle:hover {
+    background-color: #555;
+}
+
+.dark-mode .dropdown-menu,
+.dark-mode .dropdown-item {
+    background-color: #444;
+    border-color: #555;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.dark-mode .dropdown-item {
+    color: #f0f0f0;
+}
+
+.dark-mode .dropdown-item:hover {
+    background-color: #555;
+}
+
+/* Form Select */
+.dark-mode .form-select {
+    background-color: #626262;
+    border-color: #838383;
+    color: #fff;
+}
+
+/* Button Styles */
+.dark-mode .btn-primary,
+.dark-mode .btn-danger {
+    color: #fff;
+    transition: background-color 0.1s ease-in-out;
+}
+
+/* Primary Button */
+.dark-mode .btn-primary {
+    background-color: #357ebd;
+    border-color: #357ebd;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #4c96cc;
+    border-color: #4c96cc;
+}
+
+.dark-mode .btn-primary.focus,
+.dark-mode .btn-primary:active {
+    background-color: #235f91;
+    border-color: #235f91;
+}
+
+.dark-mode .btn-primary:active:hover {
+    background-color: #1b4a70;
+    border-color: #1b4a70;
+}
+
+/* Danger Button */
+.dark-mode .btn-danger {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+.dark-mode .btn-danger:hover {
+    background-color: #e75c5a;
+    border-color: #e75c5a;
+}
+
+.dark-mode .btn-danger:focus,
+.dark-mode .btn-danger.active {
+    background-color: #c43e3c;
+    border-color: #c43e3c;
+}
+
+.dark-mode .btn-danger:active:hover {
+    background-color: #a83634;
+    border-color: #a83634;
+}

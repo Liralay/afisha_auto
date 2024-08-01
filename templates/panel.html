@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <link rel="icon" type="image/svg" href="../static/img/favicon.svg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тот самый автосборщик</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/panel-main-styles.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/panel-dark-theme-styles.css">
+  </head>
+
+  <body>
+
+    <!--Навигационная панель-->
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <div>
+          <img id="changelog-icon" src="../static/img/favicon.svg" alt="Журнал изменений" title="Журнал изменений" width="30" height="30" class="d-inline-block align-text-top me-2 cursor-pointer">
+          <a class="navbar-brand align-middle">Автоматизация рассылок Афиши</a>
+        </div>
+        <div>
+          <button id="toggle-theme" type="button" class="btn btn-dark">Темная тема</button>
+          <button id="wiki" type="button" class="btn btn-dark" title="Описание/инструкция на Wiki">Wiki</button>
+          <button id="write-author" type="button" class="btn btn-dark" title="Написать автору">
+            <img src="../static/img/telegram-airplane-only.svg" height="17" alt="Telegram"> ioannvs
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!--Боковая панель-->
+    <div class="d-flex align-items-start">
+
+      <!--Навигация-->
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link type-btn" id="event-btn" value="event" type="button">Событие</button>
+{#        <button class="nav-link type-btn" id="promo-btn" value="promo" type="button">Промо&#8209;письмо</button>#}
+        <button class="nav-link type-btn" id="mix-btn" value="mix" type="button">Дайджест MIX</button>
+        <button class="nav-link type-btn" id="selection-btn" value="selection" type="button">Подборка</button>
+        <button class="nav-link type-btn" id="king-btn" value="king" type="button">Царь&#8209;дайджест</button>
+      </div>
+
+      <!--Площадка для инструментов-->
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+          <div class="tab-pane fade active show" id="nav-info-input" role="tabpanel" aria-labelledby="nav-info-input-tab" tabindex="0">
+            <div class="container" id="main-container"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="module" src="/static/js/dark-theme.js"></script>
+    <script type="module" src="/static/js/digests.js"></script>
+    <script type="module" src="/static/js/tools.js"></script>
+    <script type="module" src="/static/js/event.js"></script>
+    <script type="module" src="/static/js/main.js"></script>
+  </body>
+</html>

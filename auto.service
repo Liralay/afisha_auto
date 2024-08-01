@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto assembler (развертка на сервере)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/pyBots/auto
+ExecStart=/root/Python-3.11.3/python /root/pyBots/auto/src/__init__.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
